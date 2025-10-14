@@ -35,4 +35,8 @@ li {
         margin: 0 auto;
         float: none;
     }
+
+    #contenedorOpcionesYColumnas {
+        gap: 1em;
+    }
 }
