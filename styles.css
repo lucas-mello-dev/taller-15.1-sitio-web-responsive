@@ -10,3 +10,13 @@ header{
 #titulo{
     font-size: 2em;
 }
+
+.opciones{
+    border: 1px solid grey;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+a {
+    color: black;
+}
