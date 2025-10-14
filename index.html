@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="index.js"></script>
     <title>Taller 15.1. - Sitio Web Responsive</title>
 </head>
 
@@ -22,14 +23,15 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Dolor</a>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#"
+                                style="color: white;">Dolor</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" style="color: rgb(203, 203, 203);">Sit</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sit</a>
+                        <li class="nav-item"><a class="nav-link" href="#" style="color: rgb(203, 203, 203);">Amet</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Amet</a>
+                        <li class="nav-item d-none d-sm-block d-md-block d-lg-none">
+                            <a id="btnOpciones" class="nav-link" href="#"
+                                style="color: rgb(203, 203, 203);">Opciones</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -39,27 +41,61 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div id="contenedorTituloYTextoCambiante" class="mt-5 mb-5">
+
+    <main class="container">
+
+        <div id="contenedorTituloYTextoCambiante" class="text-center my-5">
             <h1 id="titulo">Lorem ipsum...</h1>
-            <h3 id="textoCambiante"></h3>
+            <h4 id="textoCambiante" class=""></h4>
         </div>
-        <div id="contenedorOpcionesYColumnas" class="container text-center d-flex">
-            <div id="contenedorOpciones" class="row">
-                <div class="opciones"><a href="">Opcion 1</a></div>
-                <div class="opciones"><a href="">Opcion 2</a></div>
-                <div class="opciones"><a href="">Opcion 3</a></div>
-                <div class="opciones"><a href="">Opcion 4</a></div>
+
+        <div id="contenedorOpcionesYColumnas" class="row mb-5">
+            <div id="contenedorOpciones" class="col-md-3 d-none d-lg-block">
+                <div class="list-group opciones-list-group">
+                    <a href="#" class="list-group-item list-group-item-action">Opción 1</a>
+                    <a href="#" class="list-group-item list-group-item-action">Opción 2</a>
+                    <a href="#" class="list-group-item list-group-item-action">Opción 3</a>
+                    <a href="#" class="list-group-item list-group-item-action">Opción 4</a>
+                </div>
             </div>
-            <div id="contenedorColumnas" class="row">
-                <div class="col-3">Columna 1</div>
-                <div class="col-3">Columna 2</div>
-                <div class="col-3">Columna 3</div>
-                <div class="col-3">Columna 4</div>
-                <div class="col-3">Columna 5</div>
-                <div class="col-3">Columna 6</div>
-                <div class="col-3">Columna 7</div>
-                <div class="col-3">Columna 8</div>
+
+            <div id="contenedorColumnas" class="col-md-9">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis, tortor ac congue
+                        commodo, nisi neque bibendum elit, quis vulputate dolor augue ut mauris. tincidunt.
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        Phasellus eleifend semper tempor. Quisque mi lorem, laoreet eu urna sit amet, tempor volutpat
+                        est. Vestibulum lobortis nulla vel odio laoreet, iaculis rhoncus neque porttitor.
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        Fusce vitae enim et tellus lacinia condimentum eu at massa. Nullam laoreet, elit quis hendrerit
+                        maximus, ante sem congue lorem, at vestibulum felis mauris et arcu.
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        Mauris mattis porttitor erat, in pharetra risus fringilla lobortis. Vestibulum et ante commodo,
+                        neque ac, tempus felis. Nullam sed pharetra purus. Donec sit amet ultricies nisi.
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        In mi velit, fringilla sed velit vel, ornare varius dui. Nunc viverra diam sit amet mollis
+                        posuere. Nullam semper odio in consectetur ornare.
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        Proin suscipit orci mi, ut hendrerit mi molestie nec. Donec efficitur risus erat, eu auctor
+                        massa molestie vitae.
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+                        lectus ligula, ultricies et est nec, varius
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        In aliquet fringilla libero, quis dapibus massa tincidunt a. Orci varius natoque penatibus et
+                        magnis dis parturient montes, nascetur
+                    </div>
+                </div>
             </div>
         </div>
     </main>

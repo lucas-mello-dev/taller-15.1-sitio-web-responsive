@@ -1,0 +1,38 @@
+header {
+    background-color: rgba(108, 117, 125);
+}
+
+#contenedorTituloYTextoCambiante {
+    display: flex;
+    justify-content: center;
+}
+
+#titulo {
+    font-size: 2em;
+}
+
+.opciones-list-group .list-group-item {
+    border-radius: 0;
+}
+
+#listaOpciones a {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.navbar a,
+li {
+    color: white;
+}
+
+#contenedorColumnas div {
+    text-align: justify;
+}
+
+@media (max-width: 991.98px) {
+    #contenedorColumnas {
+        margin: 0 auto;
+        float: none;
+    }
+}
