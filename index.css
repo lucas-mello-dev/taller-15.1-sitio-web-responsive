@@ -14,6 +14,7 @@ header {
 
 .opciones-list-group .list-group-item {
     border-radius: 0;
+    padding: 0.8em;
 }
 
 #listaOpciones a {
@@ -31,13 +32,6 @@ li {
     text-align: justify;
 }
 
-@media (max-width: 991.98px) {
-    #contenedorColumnas {
-        margin: 0 auto;
-        float: none;
-    }
-
-    #contenedorOpcionesYColumnas {
-        gap: 1em;
-    }
+.textoCambiante{
+    font-size: 1.3em;
 }

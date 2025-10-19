@@ -15,14 +15,19 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">LOREM IPSUM</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <a class="navbar-brand order-1 order-lg-1" href="#">LOREM IPSUM</a>
+                <button class="navbar-toggler order-2 order-lg-2" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse order-3 order-lg-3" id="navbarSupportedContent">
+
+                    <form class="d-flex order-1 order-lg-3 mt-2 mt-lg-0" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    </form>
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 order-2 order-lg-2">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#"
                                 style="color: white;">Dolor</a></li>
                         <li class="nav-item"><a class="nav-link" href="#" style="color: rgb(203, 203, 203);">Sit</a>
@@ -34,9 +39,6 @@
                                 style="color: rgb(203, 203, 203);">Opciones</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    </form>
                 </div>
             </div>
         </nav>
@@ -46,7 +48,25 @@
 
         <div id="contenedorTituloYTextoCambiante" class="text-center my-5">
             <h1 id="titulo">Lorem ipsum...</h1>
-            <h4 id="textoCambiante">[Texto cambiante]</h4>
+            <div class="carousel slide carousel-text" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h3 class="textoCambiante">
+                            ...vestibulum mollis, tortor ac congue commodo
+                        </h3>
+                    </div>
+                    <div class="carousel-item">
+                        <h3 class="textoCambiante">
+                            ...fusce vitae enim et tellus lacinia condimentum eu at massa
+                        </h3>
+                    </div>
+                    <div class="carousel-item">
+                        <h3 class="textoCambiante">
+                            ...nunc viverra diam sit amet mollis posuere
+                        </h3>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="contenedorOpcionesYColumnas" class="row mb-5">
